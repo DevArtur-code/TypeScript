@@ -1,0 +1,60 @@
+
+//variaveis
+
+let nome: string = "Artur";
+let idade: number = 19;
+let ativo: boolean = true;
+
+let numeros: number[] = [1, 2, 3];
+
+//calculo
+
+function somar(a: number, b: number): number {
+  return a + b;
+}
+
+console.log(somar(5, 10)); // 15
+
+//Objetos e interfaces
+
+interface Pessoa {
+  nome: string;
+  idade: number;
+  ativo?: boolean; // "?" significa opcional
+}
+
+const p1: Pessoa = { nome: "Ana", idade: 25 };
+
+//Classes
+
+class Animal {
+  nome: string;
+
+  constructor(nome: string) {
+    this.nome = nome;
+  }
+
+  falar(): void {
+    console.log(`${this.nome} está fazendo barulho`);
+  }
+}
+
+const cachorro = new Animal("Rex");
+cachorro.falar();
+
+//decisões
+
+let idade: number = 18;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+
+//loos
+
+for (let i = 1; i <= 5; i++) {
+  console.log("Número:", i);
+}
+
